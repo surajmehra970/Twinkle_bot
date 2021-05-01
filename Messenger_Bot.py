@@ -45,7 +45,7 @@ async def on_message(message):
 
 	if message.content.startswith('!help country_name'):
 		file = discord.File('country_li.txt')
-		await message.channel.send(file)
+		await message.channel.send(file=file, content="Message to be sent")
 
 	if message.content.startswith('!hello'):
 		await message.channel.send('Hello!')
