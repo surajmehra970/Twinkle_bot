@@ -44,9 +44,8 @@ async def on_message(message):
 		await message.channel.send('You can use commands like !hello, !quote, !Case <country_name>')
 
 	if message.content.startswith('!help country_name'):
-		file = open('country_li.txt','r')
-		file_cunt = json.loads(file.text)
-		await message.channel.send(file_cunt)
+		file = discord.File('country_li.txt')
+		await message.channel.send(file)
 
 	if message.content.startswith('!hello'):
 		await message.channel.send('Hello!')
