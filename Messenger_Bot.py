@@ -32,14 +32,14 @@ async def on_message(message):
 
 	msg = message.content
 
-	if message.content.startswith('$help Twinkle'):
-		await message.channel.send('You can use commands like $hello, $quote')
-	if message.content.startswith('$hello'):
+	if message.content.startswith('!help Twinkle'):
+		await message.channel.send('You can use commands like !hello, !quote, !Case <country_name>')
+	if message.content.startswith('!hello'):
 		await message.channel.send('Hello!')
 
-	if message.content.startswith('$quote'):
+	if message.content.startswith('!quote'):
 		quote = get_quote()
-		await message.channel.send(quote)
+		await message.channel.send(quote)  
 
 	if message.content.startswith('help'):
 		await message.channel.send('use $help Twinkle')
@@ -47,5 +47,16 @@ async def on_message(message):
 
 	if any(word in msg for word in sad_words):
 		await message.channel.send(random.choice(starter_encouragements))
+
+	if message.content.startswith('!Case'):
+		country = msg.split(' ')[1]
+		response = requests.get('https://api.covid19api.com/total/country/'+country)
+		json_data = json.loads(response.text)
+		new_data = json_data[-1]
+		Confirmed = new_data['Confirmed']
+		Deaths = new_data['Deaths']
+		Recovered = new_data['Recovered']
+		Active = new_data['Active']
+		await message.channel.send(f"Confirmed:{Confirmed}, Deaths:{Deaths}, Recovered:{Recovered}, Active:{Active}")
 
 Client.run(os.environ['Twink_Token'])
