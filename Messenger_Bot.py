@@ -42,7 +42,7 @@ async def on_message(message):
 		await message.channel.send(quote)  
 
 	if message.content.startswith('help'):
-		await message.channel.send('use $help Twinkle')
+		await message.channel.send('use !help Twinkle')
 
 
 	if any(word in msg for word in sad_words):
