@@ -32,6 +32,8 @@ async def on_message(message):
 
 	msg = message.content
 
+	if message.content.startswith('$help Twinkle'):
+		await message.channel.send('You can use commands like $hello, $quote')
 	if message.content.startswith('$hello'):
 		await message.channel.send('Hello!')
 
