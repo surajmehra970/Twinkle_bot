@@ -41,4 +41,4 @@ async def on_message(message):
 	if any(word in msg for word in sad_words):
 		await message.channel.send(random.choice(starter_encouragements))
 
-Client.run('ODM2MTI4NjA2ODI0MzAwNTU0.YIZfcg.8lEijPu0qpad8g8NP2O-AvuOA5k')
+Client.run(Twink_Token)
