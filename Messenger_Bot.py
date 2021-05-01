@@ -2,6 +2,7 @@ import discord
 import requests
 import json
 import random
+import os
 
 Client = discord.Client()
 
@@ -41,4 +42,4 @@ async def on_message(message):
 	if any(word in msg for word in sad_words):
 		await message.channel.send(random.choice(starter_encouragements))
 
-Client.run(Twink_Token)
+Client.run(os.environ['Twink_Token'])
