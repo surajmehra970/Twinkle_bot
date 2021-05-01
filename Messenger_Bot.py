@@ -8,6 +8,14 @@ Client = discord.Client()
 
 sad_words = ['sad', 'depressed', 'unhappy', 'angry', 'miserable', 'depressing']
 
+response_con = requests.get("https://api.covid19api.com/countries")
+json_data_con = json.loads(response_con.text)
+country_list = [i['Slug'] for i in json_data_con]
+country_list.sort()
+country_dic = {}
+for i in country_list:
+	country_dic[i] = True
+
 starter_encouragements = [
 	"cheer up!",
 	'Hang in there',
@@ -34,6 +42,10 @@ async def on_message(message):
 
 	if message.content.startswith('!help Twinkle'):
 		await message.channel.send('You can use commands like !hello, !quote, !Case <country_name>')
+
+	if message.content.startswith('!help country_name'):
+		await message.channel.send("Name of countries\n",country_list)
+
 	if message.content.startswith('!hello'):
 		await message.channel.send('Hello!')
 
@@ -50,13 +62,16 @@ async def on_message(message):
 
 	if message.content.startswith('!Case'):
 		country = msg.split(' ')[1]
-		response = requests.get('https://api.covid19api.com/total/country/'+country)
-		json_data = json.loads(response.text)
-		new_data = json_data[-1]
-		Confirmed = new_data['Confirmed']
-		Deaths = new_data['Deaths']
-		Recovered = new_data['Recovered']
-		Active = new_data['Active']
-		await message.channel.send(f"Confirmed : {Confirmed}, Deaths : {Deaths}, Recovered : {Recovered}, Active : {Active}")
+		if country_dic[country]:
+			response = requests.get('https://api.covid19api.com/total/country/'+country)
+			json_data = json.loads(response.text)
+			new_data = json_data[-1]
+			Confirmed = new_data['Confirmed']
+			Deaths = new_data['Deaths']
+			Recovered = new_data['Recovered']
+			Active = new_data['Active']
+			await message.channel.send(f"Confirmed : {Confirmed}, Deaths : {Deaths}, Recovered : {Recovered}, Active : {Active}")
+		else:
+			await message.channel.send("Invalid country name. Try !help country_name")
 
 Client.run(os.environ['Twink_Token'])
