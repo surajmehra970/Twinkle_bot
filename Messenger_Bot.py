@@ -57,6 +57,6 @@ async def on_message(message):
 		Deaths = new_data['Deaths']
 		Recovered = new_data['Recovered']
 		Active = new_data['Active']
-		await message.channel.send(f"Confirmed:{Confirmed}, Deaths:{Deaths}, Recovered:{Recovered}, Active:{Active}")
+		await message.channel.send(f"Confirmed : {Confirmed}, Deaths : {Deaths}, Recovered : {Recovered}, Active : {Active}")
 
 Client.run(os.environ['Twink_Token'])
