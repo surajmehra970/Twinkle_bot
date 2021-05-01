@@ -44,7 +44,8 @@ async def on_message(message):
 		await message.channel.send('You can use commands like !hello, !quote, !Case <country_name>')
 
 	if message.content.startswith('!help country_name'):
-		await message.channel.send(f"Name of countries\n {country_list}")
+		file = open('country_li.txt','r')
+		await message.channel.send(file)
 
 	if message.content.startswith('!hello'):
 		await message.channel.send('Hello!')
