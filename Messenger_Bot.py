@@ -45,7 +45,8 @@ async def on_message(message):
 
 	if message.content.startswith('!help country_name'):
 		file = open('country_li.txt','r')
-		await message.channel.send(file)
+		file_cunt = json.loads(file.text)
+		await message.channel.send(file_cunt)
 
 	if message.content.startswith('!hello'):
 		await message.channel.send('Hello!')
