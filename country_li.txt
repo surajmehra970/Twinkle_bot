@@ -1,1 +1,499 @@
-['afghanistan', 'ala-aland-islands', 'albania', 'algeria', 'american-samoa', 'andorra', 'angola', 'anguilla', 'antarctica', 'antigua-and-barbuda', 'argentina', 'armenia', 'aruba', 'australia', 'austria', 'azerbaijan', 'bahamas', 'bahrain', 'bangladesh', 'barbados', 'belarus', 'belgium', 'belize', 'benin', 'bermuda', 'bhutan', 'bolivia', 'bosnia-and-herzegovina', 'botswana', 'bouvet-island', 'brazil', 'british-indian-ocean-territory', 'british-virgin-islands', 'brunei', 'bulgaria', 'burkina-faso', 'burundi', 'cambodia', 'cameroon', 'canada', 'cape-verde', 'cayman-islands', 'central-african-republic', 'chad', 'chile', 'china', 'christmas-island', 'cocos-keeling-islands', 'colombia', 'comoros', 'congo-brazzaville', 'congo-kinshasa', 'cook-islands', 'costa-rica', 'cote-divoire', 'croatia', 'cuba', 'cyprus', 'czech-republic', 'denmark', 'djibouti', 'dominica', 'dominican-republic', 'ecuador', 'egypt', 'el-salvador', 'equatorial-guinea', 'eritrea', 'estonia', 'ethiopia', 'falkland-islands-malvinas', 'faroe-islands', 'fiji', 'finland', 'france', 'french-guiana', 'french-polynesia', 'french-southern-territories', 'gabon', 'gambia', 'georgia', 'germany', 'ghana', 'gibraltar', 'greece', 'greenland', 'grenada', 'guadeloupe', 'guam', 'guatemala', 'guernsey', 'guinea', 'guinea-bissau', 'guyana', 'haiti', 'heard-and-mcdonald-islands', 'holy-see-vatican-city-state', 'honduras', 'hong-kong-sar-china', 'hungary', 'iceland', 'india', 'indonesia', 'iran', 'iraq', 'ireland', 'isle-of-man', 'israel', 'italy', 'jamaica', 'japan', 'jersey', 'jordan', 'kazakhstan', 'kenya', 'kiribati', 'korea-north', 'korea-south', 'kosovo', 'kuwait', 'kyrgyzstan', 'lao-pdr', 'latvia', 'lebanon', 'lesotho', 'liberia', 'libya', 'liechtenstein', 'lithuania', 'luxembourg', 'macao-sar-china', 'macedonia', 'madagascar', 'malawi', 'malaysia', 'maldives', 'mali', 'malta', 'marshall-islands', 'martinique', 'mauritania', 'mauritius', 'mayotte', 'mexico', 'micronesia', 'moldova', 'monaco', 'mongolia', 'montenegro', 'montserrat', 'morocco', 'mozambique', 'myanmar', 'namibia', 'nauru', 'nepal', 'netherlands', 'netherlands-antilles', 'new-caledonia', 'new-zealand', 'nicaragua', 'niger', 'nigeria', 'niue', 'norfolk-island', 'northern-mariana-islands', 'norway', 'oman', 'pakistan', 'palau', 'palestine', 'panama', 'papua-new-guinea', 'paraguay', 'peru', 'philippines', 'pitcairn', 'poland', 'portugal', 'puerto-rico', 'qatar', 'romania', 'russia', 'rwanda', 'réunion', 'saint-barthélemy', 'saint-helena', 'saint-kitts-and-nevis', 'saint-lucia', 'saint-martin-french-part', 'saint-pierre-and-miquelon', 'saint-vincent-and-the-grenadines', 'samoa', 'san-marino', 'sao-tome-and-principe', 'saudi-arabia', 'senegal', 'serbia', 'seychelles', 'sierra-leone', 'singapore', 'slovakia', 'slovenia', 'solomon-islands', 'somalia', 'south-africa', 'south-georgia-and-the-south-sandwich-islands', 'south-sudan', 'spain', 'sri-lanka', 'sudan', 'suriname', 'svalbard-and-jan-mayen-islands', 'swaziland', 'sweden', 'switzerland', 'syria', 'taiwan', 'tajikistan', 'tanzania', 'thailand', 'timor-leste', 'togo', 'tokelau', 'tonga', 'trinidad-and-tobago', 'tunisia', 'turkey', 'turkmenistan', 'turks-and-caicos-islands', 'tuvalu', 'uganda', 'ukraine', 'united-arab-emirates', 'united-kingdom', 'united-states', 'uruguay', 'us-minor-outlying-islands', 'uzbekistan', 'vanuatu', 'venezuela', 'vietnam', 'virgin-islands', 'wallis-and-futuna-islands', 'western-sahara', 'yemen', 'zambia', 'zimbabwe']
+Actual name : Name_for_Command
+
+
+
+British Virgin Islands : british-virgin-islands
+
+Guatemala : guatemala
+
+Timor-Leste : timor-leste
+
+Belize : belize
+
+Congo (Kinshasa) : congo-kinshasa
+
+Guam : guam
+
+Ireland : ireland
+
+Myanmar : myanmar
+
+Sudan : sudan
+
+Peru : peru
+
+Saint Lucia : saint-lucia
+
+United Kingdom : united-kingdom
+
+Benin : benin
+
+British Indian Ocean Territory : british-indian-ocean-territory
+
+Macao, SAR China : macao-sar-china
+
+Botswana : botswana
+
+Germany : germany
+
+Samoa : samoa
+
+Suriname : suriname
+
+Tokelau : tokelau
+
+Falkland Islands (Malvinas) : falkland-islands-malvinas
+
+Holy See (Vatican City State) : holy-see-vatican-city-state
+
+Costa Rica : costa-rica
+
+Iceland : iceland
+
+Macedonia, Republic of : macedonia
+
+Slovakia : slovakia
+
+Svalbard and Jan Mayen Islands : svalbard-and-jan-mayen-islands
+
+Gambia : gambia
+
+Kenya : kenya
+
+Monaco : monaco
+
+Pitcairn : pitcairn
+
+Cameroon : cameroon
+
+China : china
+
+Czech Republic : czech-republic
+
+Lesotho : lesotho
+
+Mauritius : mauritius
+
+Paraguay : paraguay
+
+Armenia : armenia
+
+Cuba : cuba
+
+United States of America : united-states
+
+Zimbabwe : zimbabwe
+
+Ecuador : ecuador
+
+Malawi : malawi
+
+Marshall Islands : marshall-islands
+
+Chad : chad
+
+Tonga : tonga
+
+Turks and Caicos Islands : turks-and-caicos-islands
+
+Jersey : jersey
+
+Netherlands : netherlands
+
+Russian Federation : russia
+
+Yemen : yemen
+
+ALA Aland Islands : ala-aland-islands
+
+Bosnia and Herzegovina : bosnia-and-herzegovina
+
+Burundi : burundi
+
+Finland : finland
+
+Sri Lanka : sri-lanka
+
+Republic of Kosovo : kosovo
+
+Tajikistan : tajikistan
+
+Bouvet Island : bouvet-island
+
+Faroe Islands : faroe-islands
+
+India : india
+
+Papua New Guinea : papua-new-guinea
+
+Réunion : réunion
+
+Puerto Rico : puerto-rico
+
+Saint-Barthélemy : saint-barthélemy
+
+Saudi Arabia : saudi-arabia
+
+Angola : angola
+
+Colombia : colombia
+
+Latvia : latvia
+
+South Africa : south-africa
+
+Algeria : algeria
+
+Azerbaijan : azerbaijan
+
+Dominica : dominica
+
+Kiribati : kiribati
+
+Singapore : singapore
+
+Bangladesh : bangladesh
+
+Isle of Man : isle-of-man
+
+Uzbekistan : uzbekistan
+
+Albania : albania
+
+Estonia : estonia
+
+Honduras : honduras
+
+French Polynesia : french-polynesia
+
+Uganda : uganda
+
+Andorra : andorra
+
+French Guiana : french-guiana
+
+Mongolia : mongolia
+
+Swaziland : swaziland
+
+Trinidad and Tobago : trinidad-and-tobago
+
+Comoros : comoros
+
+Djibouti : djibouti
+
+Guyana : guyana
+
+Switzerland : switzerland
+
+Equatorial Guinea : equatorial-guinea
+
+Greece : greece
+
+Israel : israel
+
+Senegal : senegal
+
+Seychelles : seychelles
+
+American Samoa : american-samoa
+
+El Salvador : el-salvador
+
+Micronesia, Federated States of : micronesia
+
+Nicaragua : nicaragua
+
+Poland : poland
+
+Martinique : martinique
+
+Mexico : mexico
+
+New Zealand : new-zealand
+
+Turkey : turkey
+
+Venezuela (Bolivarian Republic) : venezuela
+
+Georgia : georgia
+
+Nigeria : nigeria
+
+Palestinian Territory : palestine
+
+Rwanda : rwanda
+
+Sweden : sweden
+
+Belgium : belgium
+
+Central African Republic : central-african-republic
+
+Montserrat : montserrat
+
+Mozambique : mozambique
+
+Oman : oman
+
+Luxembourg : luxembourg
+
+Anguilla : anguilla
+
+Antarctica : antarctica
+
+Australia : australia
+
+Eritrea : eritrea
+
+Iraq : iraq
+
+Italy : italy
+
+Malaysia : malaysia
+
+Vanuatu : vanuatu
+
+Netherlands Antilles : netherlands-antilles
+
+New Caledonia : new-caledonia
+
+Taiwan, Republic of China : taiwan
+
+Saint Pierre and Miquelon : saint-pierre-and-miquelon
+
+Burkina Faso : burkina-faso
+
+Canada : canada
+
+French Southern Territories : french-southern-territories
+
+Iran, Islamic Republic of : iran
+
+Korea (North) : korea-north
+
+Mauritania : mauritania
+
+Romania : romania
+
+Bahrain : bahrain
+
+Christmas Island : christmas-island
+
+Qatar : qatar
+
+Liechtenstein : liechtenstein
+
+Niue : niue
+
+Saint Vincent and Grenadines : saint-vincent-and-the-grenadines
+
+Tunisia : tunisia
+
+Chile : chile
+
+Congo (Brazzaville) : congo-brazzaville
+
+Haiti : haiti
+
+Bolivia : bolivia
+
+Cook Islands : cook-islands
+
+Ghana : ghana
+
+Jamaica : jamaica
+
+Lao PDR : lao-pdr
+
+Zambia : zambia
+
+Cape Verde : cape-verde
+
+Guinea : guinea
+
+Korea (South) : korea-south
+
+Norfolk Island : norfolk-island
+
+Philippines : philippines
+
+Viet Nam : vietnam
+
+Liberia : liberia
+
+Nauru : nauru
+
+US Minor Outlying Islands : us-minor-outlying-islands
+
+Aruba : aruba
+
+Barbados : barbados
+
+Hungary : hungary
+
+Japan : japan
+
+Malta : malta
+
+Northern Mariana Islands : northern-mariana-islands
+
+Norway : norway
+
+Uruguay : uruguay
+
+Belarus : belarus
+
+Egypt : egypt
+
+Guinea-Bissau : guinea-bissau
+
+Heard and Mcdonald Islands : heard-and-mcdonald-islands
+
+Kazakhstan : kazakhstan
+
+Mali : mali
+
+Croatia : croatia
+
+Denmark : denmark
+
+Gabon : gabon
+
+Bhutan : bhutan
+
+Spain : spain
+
+Togo : togo
+
+Antigua and Barbuda : antigua-and-barbuda
+
+Slovenia : slovenia
+
+Brazil : brazil
+
+Hong Kong, SAR China : hong-kong-sar-china
+
+Jordan : jordan
+
+South Georgia and the South Sandwich Islands : south-georgia-and-the-south-sandwich-islands
+
+Tuvalu : tuvalu
+
+Libya : libya
+
+Moldova : moldova
+
+San Marino : san-marino
+
+Serbia : serbia
+
+Wallis and Futuna Islands : wallis-and-futuna-islands
+
+Afghanistan : afghanistan
+
+Somalia : somalia
+
+Lebanon : lebanon
+
+Montenegro : montenegro
+
+United Arab Emirates : united-arab-emirates
+
+Gibraltar : gibraltar
+
+Madagascar : madagascar
+
+Saint-Martin (French part) : saint-martin-french-part
+
+Tanzania, United Republic of : tanzania
+
+Turkmenistan : turkmenistan
+
+Cambodia : cambodia
+
+Namibia : namibia
+
+Pakistan : pakistan
+
+Kyrgyzstan : kyrgyzstan
+
+Maldives : maldives
+
+Morocco : morocco
+
+Sao Tome and Principe : sao-tome-and-principe
+
+Ukraine : ukraine
+
+Bermuda : bermuda
+
+Grenada : grenada
+
+Mayotte : mayotte
+
+Palau : palau
+
+Panama : panama
+
+Nepal : nepal
+
+Saint Kitts and Nevis : saint-kitts-and-nevis
+
+Cocos (Keeling) Islands : cocos-keeling-islands
+
+Dominican Republic : dominican-republic
+
+Ethiopia : ethiopia
+
+Fiji : fiji
+
+Indonesia : indonesia
+
+Kuwait : kuwait
+
+Sierra Leone : sierra-leone
+
+South Sudan : south-sudan
+
+Thailand : thailand
+
+Western Sahara : western-sahara
+
+Argentina : argentina
+
+Cayman Islands : cayman-islands
+
+France : france
+
+Greenland : greenland
+
+Guadeloupe : guadeloupe
+
+Lithuania : lithuania
+
+Bahamas : bahamas
+
+Bulgaria : bulgaria
+
+Saint Helena : saint-helena
+
+Brunei Darussalam : brunei
+
+Cyprus : cyprus
+
+Niger : niger
+
+Portugal : portugal
+
+Solomon Islands : solomon-islands
+
+Austria : austria
+
+Côte d'Ivoire : cote-divoire
+
+Guernsey : guernsey
+
+Syrian Arab Republic (Syria) : syria
+
+Virgin Islands, US : virgin-islands
