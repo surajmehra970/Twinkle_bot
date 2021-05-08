@@ -39,7 +39,10 @@ async def on_message(message):
 		return
 
 	msg = message.content
-	await message.channel.send('k!drop')
+
+	if message.content.startswith('!drop twin'):
+		await message.channel.send('k!drop')
+	
 	if message.content.startswith('!help Twinkle'):
 		await message.channel.send('You can use commands like \n !hello, !quote, !Case <country_name>, !help country_name')
 
