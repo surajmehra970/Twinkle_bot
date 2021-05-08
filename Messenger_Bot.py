@@ -76,5 +76,4 @@ async def on_message(message):
 		except:
 			await message.channel.send("Invalid country name. Try !help country_name")
 
-Client.run('ODM4MzM2NDUyMzQxMTM3NDA4.YI5nqQ.Zisjhf3mIslqPhi0ksX35Br5-Fs')
-#os.environ['Twinkle_Token']
+Client.run(os.environ['Twinkle_Token'])
