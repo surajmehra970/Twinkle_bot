@@ -39,9 +39,9 @@ async def on_message(message):
 		return
 
 	msg = message.content
-
+	await message.channel.send('kd')
 	if message.content.startswith('!help Twinkle'):
-		await message.channel.send('You can use commands like !hello, !quote, !Case <country_name>')
+		await message.channel.send('You can use commands like \n !hello, !quote, !Case <country_name>, !help country_name')
 
 	if message.content.startswith('!help country_name'):
 		file = discord.File('country_li.txt')
@@ -52,7 +52,7 @@ async def on_message(message):
 
 	if message.content.startswith('!quote'):
 		quote = get_quote()
-		await message.channel.send(quote)  
+		await message.channel.send(quote)
 
 	if message.content.startswith('help'):
 		await message.channel.send('use !help Twinkle')
@@ -63,16 +63,18 @@ async def on_message(message):
 
 	if message.content.startswith('!Case'):
 		country = msg.split(' ')[1]
-		if country_dic[country]:
-			response = requests.get('https://api.covid19api.com/total/country/'+country)
-			json_data = json.loads(response.text)
-			new_data = json_data[-1]
-			Confirmed = new_data['Confirmed']
-			Deaths = new_data['Deaths']
-			Recovered = new_data['Recovered']
-			Active = new_data['Active']
-			await message.channel.send(f"Confirmed : {Confirmed}, Deaths : {Deaths}, Recovered : {Recovered}, Active : {Active}")
-		else:
+		try:
+			if country_dic[country]:
+				response = requests.get('https://api.covid19api.com/total/country/'+country)
+				json_data = json.loads(response.text)
+				new_data = json_data[-1]
+				Confirmed = new_data['Confirmed']
+				Deaths = new_data['Deaths']
+				Recovered = new_data['Recovered']
+				Active = new_data['Active']
+				await message.channel.send(f"Confirmed : {Confirmed}, Deaths : {Deaths}, Recovered : {Recovered}, Active : {Active}")
+		except:
 			await message.channel.send("Invalid country name. Try !help country_name")
 
-Client.run(os.environ['Twink_Token'])
+Client.run('ODM4MzM2NDUyMzQxMTM3NDA4.YI5nqQ.Zisjhf3mIslqPhi0ksX35Br5-Fs')
+#os.environ['Twinkle_Token']
